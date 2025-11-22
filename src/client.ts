@@ -133,7 +133,8 @@ export class VoltTimeClient {
 
       transactions.push(...response.data);
 
-      hasMore = page < (response.meta?.total_pages || 0);
+      // Check if there's a next page using the links
+      hasMore = !!response.links?.next;
       page++;
     }
 

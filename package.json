@@ -1,6 +1,6 @@
 {
     "name": "volt-time-cloud-api",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "Node.js client library for VoltTime Cloud API",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -8,16 +8,34 @@
     "scripts": {
         "build": "tsc",
         "dev": "tsc --watch",
-        "test": "node --test"
+        "test": "node --test",
+        "prepublishOnly": "npm run build"
     },
     "keywords": [
         "volttime",
         "api",
         "electric-vehicle",
-        "charging"
+        "charging",
+        "ev",
+        "ocpp",
+        "charger",
+        "charging-station"
     ],
-    "author": "",
+    "author": "ives@cubits.be",
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cubits-be/volt-time-cloud-api.git"
+    },
+    "bugs": {
+        "url": "https://github.com/cubits-be/volt-time-cloud-api/issues"
+    },
+    "homepage": "https://github.com/cubits-be/volt-time-cloud-api#readme",
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
     "dependencies": {
         "axios": "^1.6.2",
         "dotenv": "^16.3.1"
