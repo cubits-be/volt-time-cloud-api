@@ -1,0 +1,29 @@
+{
+    "name": "volt-time-cloud-api",
+    "version": "1.0.0",
+    "description": "Node.js client library for VoltTime Cloud API",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "type": "module",
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc --watch",
+        "test": "node --test"
+    },
+    "keywords": [
+        "volttime",
+        "api",
+        "electric-vehicle",
+        "charging"
+    ],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "axios": "^1.6.2",
+        "dotenv": "^16.3.1"
+    },
+    "devDependencies": {
+        "@types/node": "^20.10.5",
+        "typescript": "^5.3.3"
+    }
+}
